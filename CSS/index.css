@@ -1,0 +1,342 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+body{
+    background-color: rgb(228, 228, 228)
+}
+
+.header{
+    z-index: 0;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(43, 43, 43);
+}
+header{
+    display: flex;
+}
+ul{
+    margin-left: 7vw;
+    display: flex;
+}
+.button{
+    cursor: pointer;
+    display: grid;
+    transition: .3s;
+    place-items: center;
+    width: 6vw;
+    height: 7vh;
+}
+.button:hover{
+    background-color: rgb(26, 26, 26);
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    top: 50%;
+    bottom: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vh;
+}
+.logo{
+    width: 2vw;
+}
+.logo > img{
+    margin-top: -2vw;
+    position: absolute;
+    width: 10vw;
+}
+
+
+/*CSS do slider */
+
+section.slider{
+    margin: 0 auto;
+    padding: 0 !important;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input{
+    display: none;
+}
+
+.slide-box{
+    transition: 1s;
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;    
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border-radius: 50%;
+    border: 1px solid 	#3d6100;
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: 	#3d6100;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: 		#3d6100;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: 		#3d6100;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: 		#3d6100;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: 		#3d6100;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
+}
+    /*primeiro slide*/
+
+    .primeiro > .rtx40 > img{
+        padding-right: 0;
+        padding-left: 30vw;
+        width: auto;
+        height: 81.6vh;
+        z-index: 0;
+    }  
+        .shadow{
+            padding-top: 7.75vh;
+            background: linear-gradient(
+                90deg, black 30%,  transparent 40%
+            );
+            position: absolute;
+            height: 74vh;
+            width: 100vw;
+            z-index: 1;
+        }
+    .primeiro > .text{
+        position: absolute;
+        padding-left: 6vw;
+        padding-top: 15vh;
+        z-index: 4;
+    }
+    .primeiro > .text > h1{
+        font-size: 5vh;
+        color: #fff;
+    }
+    .primeiro > .text > p{
+        line-height: 3.5vh;
+        text-align: left;
+        padding-top: 5vh;
+        color: #fff;
+    }
+    .primeiro > .rtx40 > a > button{
+        cursor: pointer;
+        z-index: 3;
+        position: absolute;
+        margin-top: -26vh;
+        margin-left: -43.5vw;
+        border: none;
+        padding: 10px 10px 10px;
+        color: #fff;
+        background-color: #76b900;
+    }
+    /*primeiro slide*/
+
+    /*segundo slide*/
+    .segundo > img{
+        width: 102vw;
+    }
+    .segundo > .text{
+        margin-left: 6vw;
+    }
+    .segundo > .text > h1{
+        margin-top: 15vh;
+        text-align: left;
+        inline-size: 40vw;
+        font-size: 5vh;
+        color: #fff;
+        position: absolute;
+    }
+    .segundo > .text > p{
+        margin-top: 30vh;
+        inline-size: 30vw;
+        line-height: 3.5vh;
+        text-align: left;
+        color: #fff;
+        position: absolute;
+    }
+    .segundo > a > button{
+        cursor: pointer;
+        z-index: 3;
+        position: absolute;
+        margin-left: 6vw;
+        margin-top: 55vh;
+        border: none;
+        padding: 10px 10px 10px;
+        color: #fff;
+        background-color: #76b900;
+    }
+    /*segundo slide*/    
+
+/*FIM do CSS do slider */
+
+/*quem somos nós?*/
+.container{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+.container > .text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 1px 1px 10px black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 5vw; 
+    margin-right: 35vw;
+    background-color: #ffffff;
+}
+.container > .text > h1{
+    color: #000000;
+    font-size: 6vh;
+    padding-left: 5vw;
+}
+.container > .text > p{
+    color: #000000;
+    font-size: 3vh;
+    padding-top: 4vh;
+    margin-left: 5vw;
+}
+.container > img{
+    margin-top: 5vh;
+    margin-left: 50vw;
+    width: 40vw;
+}
+
+
+
+/*Conteudo da home*/
+
+.content{
+    margin-top: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    top: 2vh;
+    display: flex;
+    width: auto;
+    height: 40vh;
+}
+.content > .text > h1{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    font-size: 4vh;
+}
+.content > .text > p{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-size: 1.8vh;
+    font-weight: 100;
+}
+.content > .text > a > button{
+    cursor: pointer;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    width: 6vw;
+    height: 4vh;
+    color: whitesmoke;
+    background-color: #6ab900;
+    border: none;
+}
+.content > .rest > img{
+    width: 50vw;
+    height: 40vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FIM Conteudo da home*/
+
+
+/*Footer*/
+footer{
+    margin-top: 2vh;
+    background-color: 	#ffffff;
+    width: 100%;
+    height: 20vh;
+    justify-items: center;
+}
+footer > h6{
+    color: #000000;
+    text-align: center;
+    font-weight: 10;
+    font-size: 1.90vh;
+    margin-top: 2vh;
+    margin-left: -66vw;
+    
+}
+footer > .etec-logo{
+    margin-left: 2vw;
+    padding-top: 4vh;
+    width: auto;
+    height: 5vh;
+}
+footer > .nvidia-logo{
+    margin-left: 4vw;
+    width: auto;
+    height: 5vh;
+}
+/*Fim do Footer*/
